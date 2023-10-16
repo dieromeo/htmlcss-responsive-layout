@@ -27,14 +27,17 @@
     background-color: blueviolet;
 }
 
-.debug .col {
+.debug .border {
     border: 2px solid black;
+}
+
+
+.debug .preview .col {
     height: 345px;
 }
 
 
 .debug .strategic-planning .col-big {
-    border: 2px solid black;
     background-color: aqua;
     height: 805px;
 }
@@ -42,9 +45,11 @@
 .debug .col-big .img-container,
 .debug .col-big .text-container {
     height: 50%;
-    border: 2px solid black;
 }
 
+.debug .partners .col {
+    height: 280px;
+}
 
 /* #endregion DEBUG*/
 
@@ -128,10 +133,34 @@ header ul {
 .strategic-planning {
     background-color: #9792e4;
     padding: 60px 0;
+    margin-bottom: 65px;
 }
 
 .strategic-planning .col-big {
     width: 50%;
+}
+
+/*terza section*/
+
+.partners h2 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.partners .col {
+    background-color: #9792e4;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.partners .img-container {
+    width: 25%;
+    border-radius: 15px;
+}
+
+.partners .text-container {
+    width: 75%;
+    border-radius: 15px;
 }
 
 
@@ -192,6 +221,23 @@ header ul {
 
     .debug .preview .first-row :first-child {
         height: 595px;
+    }
+
+    .partners .col {
+        flex-direction: column;
+    }
+
+    .partners .img-container,
+    .partners .text-container {
+        width: 100%;
+    }
+
+    .partners .img-container {
+        height: 40%;
+    }
+
+    .partners .text-container {
+        height: 60%;
     }
 
 }

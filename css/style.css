@@ -55,6 +55,15 @@
     height: 420px;
 }
 
+.debug .about-us .row {
+    height: 635px;
+    background-color: blueviolet;
+}
+
+.debug .about-us .img-container {
+    height: 50%;
+}
+
 /* #endregion DEBUG*/
 
 /* #region COMMON*/
@@ -199,6 +208,22 @@ header ul {
     padding: 70px 0;
 }
 
+/*quinta sezione*/
+
+.about-us {
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+
+.about-us .col-big {
+    width: 70%;
+}
+
+.about-us .col-small {
+    width: 30%;
+}
+
 
 /* #endregion MAIN*/
 
@@ -238,6 +263,13 @@ header ul {
         width: calc((100% - 30px) /2)
     }
 
+    .about-us .col-big {
+        width: 60%;
+    }
+
+    .about-us .col-small {
+        width: 40%;
+    }
 
 }
 
@@ -286,6 +318,16 @@ header ul {
 
     .benefits .col {
         width: 100%;
+    }
+
+    .about-us .row {
+        flex-direction: column;
+    }
+
+    .about-us .col-big,
+    .about-us .col-small {
+        width: 100%;
+        flex-grow: 1;
     }
 
 }

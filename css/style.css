@@ -64,6 +64,15 @@
     height: 50%;
 }
 
+.debug .get-started .text-container {
+    background-color: blueviolet;
+    height: 500px;
+}
+
+.debug footer {
+    height: 225px;
+}
+
 /* #endregion DEBUG*/
 
 /* #region COMMON*/
@@ -224,10 +233,22 @@ header ul {
     width: 30%;
 }
 
+/* sesta section */
+
+.get-started {
+    padding: 65px 0;
+}
 
 /* #endregion MAIN*/
 
 /* #region FOOTER*/
+
+footer {
+    background-color: #333333;
+    padding: 40px 0 45px;
+    color: #fff;
+}
+
 /* #endregion FOOTER*/
 
 /* #region MEDIA QUERES*/

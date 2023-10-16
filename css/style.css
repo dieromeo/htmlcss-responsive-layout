@@ -51,6 +51,10 @@
     height: 280px;
 }
 
+.debug .benefits .col {
+    height: 420px;
+}
+
 /* #endregion DEBUG*/
 
 /* #region COMMON*/
@@ -72,6 +76,15 @@ ul {
 .row {
     flex-wrap: wrap;
 }
+
+section:nth-of-type(even) {
+    background-color: #9792e4;
+}
+
+.text-center {
+    text-align: center;
+}
+
 
 
 
@@ -131,7 +144,6 @@ header ul {
 /* seconda section*/
 
 .strategic-planning {
-    background-color: #9792e4;
     padding: 60px 0;
     margin-bottom: 65px;
 }
@@ -142,9 +154,12 @@ header ul {
 
 /*terza section*/
 
+.partners {
+    margin-bottom: 115px;
+}
+
 .partners h2 {
     margin-bottom: 50px;
-    text-align: center;
 }
 
 .partners .col {
@@ -161,6 +176,27 @@ header ul {
 .partners .text-container {
     width: 75%;
     border-radius: 15px;
+}
+
+/*quarta sezione*/
+
+.benefits {
+    padding-bottom: 65px;
+}
+
+.benefits .container {
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.benefits .col {
+    background-color: #fff;
+    width: calc((100% - 60px) /3);
+    border-radius: 12px;
+}
+
+.benefits h2 {
+    padding: 70px 0;
 }
 
 
@@ -196,6 +232,10 @@ header ul {
 
     .strategic-planning .col-big {
         width: 100%;
+    }
+
+    .benefits .col {
+        width: calc((100% - 30px) /2)
     }
 
 
@@ -238,6 +278,14 @@ header ul {
 
     .partners .text-container {
         height: 60%;
+    }
+
+    .benefits .container {
+        flex-direction: column;
+    }
+
+    .benefits .col {
+        width: 100%;
     }
 
 }

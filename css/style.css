@@ -7,3 +7,82 @@
 }
 
 /* #endregion RESET*/
+
+/* #region DEBUG*/
+
+.debug header {
+    height: 75px;
+}
+
+.debug header .container {
+    height: 100%;
+}
+
+.debug .logo,
+.debug .header-link {
+    background-color: blueviolet;
+}
+
+/* #endregion DEBUG*/
+
+/* #region COMMON*/
+
+.flex {
+    display: flex;
+}
+
+div.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* #endregion COMMON*/
+
+/* #region HEADER*/
+
+header {
+    background-color: #0084fd;
+}
+
+header div.container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-link i {
+    display: none;
+}
+
+header ul {
+    gap: 35px;
+}
+
+
+/* #endregion HEADER*/
+
+/* #region MAIN*/
+/* #endregion MAIN*/
+
+/* #region FOOTER*/
+/* #endregion FOOTER*/
+
+/* #region MEDIA QUERES*/
+
+/*tablet breakpoint*/
+@media screen and (max-width: 992px) {
+
+    .header-link ul {
+        display: none;
+    }
+
+    header .header-link i {
+        display: inline-block;
+    }
+}
+
+/* #endregion MEDIA QUERES*/

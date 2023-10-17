@@ -17,13 +17,10 @@
     --orange: #fdc15f;
     --grey: #333333;
     --blueish-grey: #5a6e7f;
+    --white: #fff;
 }
 
 /*#endregion VARIABLES*/
-
-/* #region DEBUG*/
-
-/* #endregion DEBUG*/
 
 /* #region COMMON*/
 
@@ -70,7 +67,7 @@ section:nth-of-type(even) {
 }
 
 .normal {
-    background-color: #fff;
+    background-color: var(--white);
     color: black;
     padding: 7px 15px;
 }
@@ -88,8 +85,26 @@ h3 {
     font-size: 2.125rem;
 }
 
-h2 {
+h2,
+.get-started h3 {
     font-size: 3rem;
+}
+
+.preview p,
+.strategic-planning .col-right-small p,
+.partners span,
+.partners p,
+.benefits p,
+.about-us .col-small p,
+.about-us .col-big p,
+.get-started p,
+.get-started span {
+    font-size: 1.125rem;
+}
+
+.benefits span,
+.about-us h2 {
+    font-size: 4.5rem;
 }
 
 
@@ -123,11 +138,11 @@ header .logo {
 
 header a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
 .header-link i {
-    color: #fff;
+    color: var(--white);
 }
 
 
@@ -177,14 +192,13 @@ header a {
 
 .preview p {
     color: var(--blueish-grey);
-    font-size: 1.125rem;
     font-weight: bold;
     padding-bottom: 2.1875rem;
 }
 
 button.download {
     background-color: var(--blue);
-    color: #fff;
+    color: var(--white);
     padding: .4375rem 3.125rem;
     font-weight: bold;
     margin-bottom: 3.75rem;
@@ -206,7 +220,7 @@ button.download {
 .preview button .fa-apple {
     margin-right: 10px;
     font-size: 1rem;
-    color: #fff;
+    color: var(--white);
     padding-bottom: 0;
 }
 
@@ -223,7 +237,7 @@ button.download {
     width: 60%;
     padding-left: 8.125rem;
     padding-right: 4.0625rem;
-    color: #fff;
+    color: var(--white);
 }
 
 .strategic-planning .col-right {
@@ -242,16 +256,12 @@ button.download {
 }
 
 .strategic-planning .col-right-small {
-    background-color: #fff;
+    background-color: var(--white);
     border-radius: 35px;
     padding: 1.5625rem;
     position: absolute;
     bottom: 0;
     left: 0;
-}
-
-.strategic-planning .col-right-small p {
-    font-size: 1.125rem;
 }
 
 .strategic-planning .col-right-small img {
@@ -274,11 +284,6 @@ button.download {
     margin-bottom: 115px;
 }
 
-.partners span,
-.partners p {
-    font-size: 1.25rem;
-}
-
 .partners p {
     margin: 3.125rem 0;
 }
@@ -294,7 +299,7 @@ button.download {
 
 .partners .col {
     background-color: var(--purple);
-    color: #fff;
+    color: var(--white);
     border-radius: 15px;
     margin-bottom: 25px;
     padding: 1.875rem 2.5rem 2.8125rem .9375rem;
@@ -344,7 +349,7 @@ button.download {
 }
 
 .benefits .col {
-    background-color: #fff;
+    background-color: var(--white);
     width: calc((100% - 60px) /3);
     border-radius: 12px;
     padding: 3.125rem 2.1875rem 2rem;
@@ -352,7 +357,7 @@ button.download {
 
 .benefits h2 {
     padding: 70px 0;
-    color: #fff;
+    color: var(--white);
 }
 
 .benefits span,
@@ -361,7 +366,6 @@ button.download {
 }
 
 .benefits span {
-    font-size: 4.5rem;
     font-weight: bold;
 }
 
@@ -370,7 +374,6 @@ button.download {
 }
 
 .benefits p {
-    font-size: 1.25rem;
     color: #737373;
     margin-bottom: 1.875rem
 }
@@ -384,7 +387,6 @@ button.download {
 }
 
 .about-us h2 {
-    font-size: 4.5rem;
     margin-bottom: 3.75rem;
     color: var(--purple);
 }
@@ -393,12 +395,7 @@ button.download {
     margin-bottom: 4.375rem;
 }
 
-.about-us .col-big p {
-    font-size: 1.25rem;
-}
-
 .about-us .col-small p {
-    font-size: 1.875rem;
     color: var(--purple);
     margin-top: 30px;
     font-weight: bold;
@@ -449,13 +446,8 @@ button.download {
     padding: 65px 0;
 }
 
-.get-started p,
-.get-started span {
-    font-size: 1.125rem;
-}
-
 .get-started p {
-    color: #fff;
+    color: var(--white);
     max-width: 50%;
     margin: 3.125rem auto 2.1875rem;
 }
@@ -466,8 +458,7 @@ button.download {
 
 .get-started h3 {
     margin-top: 2.5rem;
-    color: #fff;
-    font-size: 3rem;
+    color: var(--white);
 }
 
 .get-started h2 {
@@ -483,7 +474,7 @@ button.download {
 }
 
 .get-started a {
-    color: #fff;
+    color: var(--white);
 }
 
 /* #endregion MAIN*/
@@ -493,7 +484,15 @@ button.download {
 footer {
     background-color: #333333;
     padding: 40px 0 45px;
-    color: #fff;
+    color: var(--white);
+}
+
+footer .text-container :first-child {
+    margin-bottom: 4.0625rem;
+}
+
+footer a {
+    color: var(--purple);
 }
 
 /* #endregion FOOTER*/

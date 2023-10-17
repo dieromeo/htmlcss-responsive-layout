@@ -23,21 +23,6 @@
 
 /* #region DEBUG*/
 
-
-.debug .border {
-    border: 2px solid black;
-}
-
-
-.debug .get-started .text-container {
-    background-color: blueviolet;
-    height: 500px;
-}
-
-.debug footer {
-    height: 225px;
-}
-
 /* #endregion DEBUG*/
 
 /* #region COMMON*/
@@ -450,18 +435,55 @@ button.download {
     margin-right: 13px;
 }
 
-/* sesta section */
-
-.get-started {
-    padding: 65px 0;
-}
-
 .about-us .fa-quote-left {
     font-size: 3.125rem;
     color: var(--purple);
     position: absolute;
     top: 0;
     right: 20px;
+}
+
+/* sesta section */
+
+.get-started {
+    padding: 65px 0;
+}
+
+.get-started p,
+.get-started span {
+    font-size: 1.125rem;
+}
+
+.get-started p {
+    color: #fff;
+    max-width: 50%;
+    margin: 3.125rem auto 2.1875rem;
+}
+
+.get-started span {
+    color: #d5d4f4;
+}
+
+.get-started h3 {
+    margin-top: 2.5rem;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.get-started h2 {
+    color: var(--orange);
+    font-size: 6rem;
+    margin-top: 4.0625rem;
+}
+
+.get-started button {
+    padding: 1.25rem 5rem;
+    color: var(--purple);
+    border-radius: 30px;
+}
+
+.get-started a {
+    color: #fff;
 }
 
 /* #endregion MAIN*/
@@ -604,6 +626,12 @@ footer {
 
     .about-us .col-big {
         margin-bottom: 3.125rem;
+    }
+
+    /*get started*/
+
+    .get-started p {
+        max-width: none;
     }
 
 }

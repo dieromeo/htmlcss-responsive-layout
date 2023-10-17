@@ -23,22 +23,11 @@
 
 /* #region DEBUG*/
 
-.debug .row {
-    background-color: blueviolet;
-}
 
 .debug .border {
     border: 2px solid black;
 }
 
-.debug .about-us .row {
-    height: 635px;
-    background-color: blueviolet;
-}
-
-.debug .about-us .img-container {
-    height: 50%;
-}
 
 .debug .get-started .text-container {
     background-color: blueviolet;
@@ -55,7 +44,6 @@
 
 body {
     font-family: 'PT Sans', sans-serif;
-    line-height: 2rem;
 }
 
 .flex {
@@ -410,19 +398,70 @@ button.download {
     margin-bottom: 150px;
 }
 
+.about-us h2 {
+    font-size: 4.5rem;
+    margin-bottom: 3.75rem;
+    color: var(--purple);
+}
+
+.about-us .col-big :nth-child(2) {
+    margin-bottom: 4.375rem;
+}
+
+.about-us .col-big p {
+    font-size: 1.25rem;
+}
+
+.about-us .col-small p {
+    font-size: 1.875rem;
+    color: var(--purple);
+    margin-top: 30px;
+    font-weight: bold;
+}
 
 .about-us .col-big {
-    width: 70%;
+    width: 63%;
+    padding-left: 3.125rem;
 }
 
 .about-us .col-small {
-    width: 30%;
+    width: 37%;
+    padding-left: 110px;
+    padding-right: 50px;
+}
+
+.about-us .img-container {
+    width: 245px;
+    height: 245px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/about.jpg);
+    position: relative;
+}
+
+.about-us button {
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+    margin-top: 1.875rem;
+}
+
+.about-us button i {
+    margin-right: 13px;
 }
 
 /* sesta section */
 
 .get-started {
     padding: 65px 0;
+}
+
+.about-us .fa-quote-left {
+    font-size: 3.125rem;
+    color: var(--purple);
+    position: absolute;
+    top: 0;
+    right: 20px;
 }
 
 /* #endregion MAIN*/
@@ -540,6 +579,8 @@ footer {
         margin: 0 auto;
     }
 
+    /*benefits*/
+
     .benefits .container {
         flex-direction: column;
     }
@@ -547,6 +588,8 @@ footer {
     .benefits .col {
         width: 100%;
     }
+
+    /*about us*/
 
     .about-us .row {
         flex-direction: column;
@@ -556,6 +599,11 @@ footer {
     .about-us .col-small {
         width: 100%;
         flex-grow: 1;
+        padding: 0;
+    }
+
+    .about-us .col-big {
+        margin-bottom: 3.125rem;
     }
 
 }

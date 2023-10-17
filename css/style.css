@@ -8,20 +8,20 @@
 
 /* #endregion RESET*/
 
+/* #region VARIABLES*/
+
+:root {
+    --blue: #0084fd;
+    --sky: #b5ddff;
+    --purple: #9792e4;
+    --orange: #fdc15f;
+    --grey: #333333;
+    --blueish-grey: #5a6e7f;
+}
+
+/*#endregion VARIABLES*/
+
 /* #region DEBUG*/
-
-.debug header {
-    height: 75px;
-}
-
-.debug header .container {
-    height: 100%;
-}
-
-.debug .logo,
-.debug .header-link {
-    background-color: blueviolet;
-}
 
 .debug .row {
     background-color: blueviolet;
@@ -77,12 +77,16 @@
 
 /* #region COMMON*/
 
+body {
+    font-family: 'Fredoka', sans-serif;
+}
+
 .flex {
     display: flex;
 }
 
 div.container {
-    max-width: 1200px;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -103,6 +107,24 @@ section:nth-of-type(even) {
     text-align: center;
 }
 
+.btn {
+    all: unset;
+    background-color: var(--purple);
+    color: #fff;
+    border-radius: 20px;
+    padding: .9375rem 3.125rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.normal {
+    background-color: #fff;
+    color: black;
+    padding: 7px 15px;
+}
+
 
 
 
@@ -112,8 +134,8 @@ section:nth-of-type(even) {
 /* #region HEADER*/
 
 header {
-    background-color: #0084fd;
-    margin-bottom: 50px;
+    background-color: var(--blue);
+    margin-bottom: 3.125rem;
 }
 
 header div.container {
@@ -127,6 +149,20 @@ header .header-link i {
 
 header ul {
     gap: 35px;
+    align-items: center;
+}
+
+header .logo {
+    padding: 15px 0;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-link i {
+    color: #fff;
 }
 
 
@@ -256,6 +292,10 @@ footer {
 /*tablet breakpoint*/
 @media screen and (max-width: 992px) {
 
+    div.container {
+        max-width: 960px;
+    }
+
     .header-link ul {
         display: none;
     }
@@ -296,6 +336,10 @@ footer {
 
 /*mobile breakpoint*/
 @media screen and (max-width: 768px) {
+
+    div.container {
+        max-width: 720px;
+    }
 
     .preview .first-row,
     .preview .second-row {

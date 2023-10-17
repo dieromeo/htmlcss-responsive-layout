@@ -32,11 +32,6 @@
 }
 
 
-.debug .preview .col {
-    height: 345px;
-}
-
-
 .debug .strategic-planning .col-big {
     background-color: aqua;
     height: 805px;
@@ -78,7 +73,7 @@
 /* #region COMMON*/
 
 body {
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .flex {
@@ -125,6 +120,10 @@ section:nth-of-type(even) {
     padding: 7px 15px;
 }
 
+img {
+    width: 100%;
+    display: block;
+}
 
 
 
@@ -184,6 +183,7 @@ header a {
     background-color: #b5ddff;
     width: calc((100% - 50px) /3);
     border-radius: 12px;
+    padding: 2.1875rem 1.5rem 0;
 }
 
 .first-row {
@@ -194,6 +194,58 @@ header a {
 .second-row {
     gap: 25px;
 }
+
+.preview .text-container {
+    width: 60%;
+}
+
+.preview .img-container {
+    width: 40%;
+    position: relative;
+}
+
+.preview h3 {
+    color: var(--blue);
+    font-size: 1.5rem;
+    margin-bottom: 2.1875rem;
+}
+
+.preview p {
+    color: var(--blueish-grey);
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding-bottom: 2.1875rem;
+}
+
+button.download {
+    background-color: var(--blue);
+    color: #fff;
+    padding: .4375rem 3.125rem;
+    font-weight: bold;
+    margin-bottom: 3.75rem;
+}
+
+.preview .phone {
+    max-width: 240px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.preview .col i {
+    font-size: 5rem;
+    color: var(--blue);
+    padding-bottom: 1.5625rem;
+}
+
+.preview button .fa-apple {
+    margin-right: 10px;
+    font-size: 1rem;
+    color: #fff;
+    padding-bottom: 0;
+}
+
+
 
 /* seconda section*/
 
@@ -296,20 +348,14 @@ footer {
         max-width: 960px;
     }
 
+    /*header*/
+
     .header-link ul {
         display: none;
     }
 
     header .header-link i {
         display: inline-block;
-    }
-
-    .debug .preview .first-row .col {
-        height: 565px;
-    }
-
-    .debug .preview .second-row .col {
-        height: 435px;
     }
 
     .strategic-planning .container {
@@ -341,23 +387,31 @@ footer {
         max-width: 720px;
     }
 
+    /*preview*/
+
     .preview .first-row,
     .preview .second-row {
-        display: block;
+        flex-direction: column;
     }
 
-    .preview .col {
+    .preview .col,
+    .preview .img-container,
+    .preview .text-container {
         width: 100%;
-        margin-bottom: 25px;
+        text-align: center;
     }
 
-    .debug .preview .first-row.col,
-    .debug .preview .second-row.col {
-        height: 355px;
+    .preview .img-container,
+    .preview .phone {
+        position: static;
     }
 
-    .debug .preview .first-row :first-child {
-        height: 595px;
+    .preview .phone {
+        margin: 0 auto
+    }
+
+    .preview .col.big {
+        flex-direction: column;
     }
 
     .partners .col {

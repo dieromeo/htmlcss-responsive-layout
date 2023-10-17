@@ -31,17 +31,6 @@
     border: 2px solid black;
 }
 
-
-.debug .strategic-planning .col-big {
-    background-color: aqua;
-    height: 805px;
-}
-
-.debug .col-big .img-container,
-.debug .col-big .text-container {
-    height: 50%;
-}
-
 .debug .partners .col {
     height: 280px;
 }
@@ -74,6 +63,7 @@
 
 body {
     font-family: 'PT Sans', sans-serif;
+    line-height: 25px;
 }
 
 .flex {
@@ -123,6 +113,14 @@ section:nth-of-type(even) {
 img {
     width: 100%;
     display: block;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 2.125rem;
 }
 
 
@@ -204,9 +202,8 @@ header a {
     position: relative;
 }
 
-.preview h3 {
+.preview h4 {
     color: var(--blue);
-    font-size: 1.5rem;
     margin-bottom: 2.1875rem;
 }
 
@@ -254,8 +251,53 @@ button.download {
     margin-bottom: 65px;
 }
 
-.strategic-planning .col-big {
-    width: 50%;
+.strategic-planning .col-left {
+    width: 60%;
+    padding-left: 8.125rem;
+    padding-right: 4.0625rem;
+    color: #fff;
+}
+
+.strategic-planning .col-right {
+    width: 40%;
+    padding-right: 130px;
+    position: relative;
+}
+
+.strategic-planning h3 {
+    margin: 8.4375rem 0 3.75rem;
+}
+
+
+.strategic-planning h4 {
+    margin: 25px 0;
+}
+
+.strategic-planning .col-right-small {
+    background-color: #fff;
+    border-radius: 35px;
+    padding: 1.5625rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.strategic-planning .col-right-small p {
+    font-size: 1.125rem;
+}
+
+.strategic-planning .col-right-small img {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.strategic-planning .arrow {
+    width: 3.125rem;
+    padding: .9375rem;
+    background-color: var(--purple);
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 2.1875rem;
 }
 
 /*terza section*/
@@ -362,8 +404,19 @@ footer {
         display: block;
     }
 
-    .strategic-planning .col-big {
+    .strategic-planning .col-left,
+    .strategic-planning .col-right {
         width: 100%;
+        padding: 0;
+    }
+
+    .strategic-planning .col-right,
+    .strategic-planning .col-right-small {
+        position: static;
+    }
+
+    .strategic-planning .col-right {
+        margin-top: 35px;
     }
 
     .benefits .col {

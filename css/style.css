@@ -31,10 +31,6 @@
     border: 2px solid black;
 }
 
-.debug .benefits .col {
-    height: 420px;
-}
-
 .debug .about-us .row {
     height: 635px;
     background-color: blueviolet;
@@ -59,7 +55,7 @@
 
 body {
     font-family: 'PT Sans', sans-serif;
-    line-height: 25px;
+    line-height: 2rem;
 }
 
 .flex {
@@ -93,7 +89,7 @@ section:nth-of-type(even) {
     background-color: var(--purple);
     color: #fff;
     border-radius: 20px;
-    padding: .9375rem 3.125rem;
+    padding: .5rem 3.125rem;
 }
 
 .btn:hover {
@@ -378,11 +374,34 @@ button.download {
     background-color: #fff;
     width: calc((100% - 60px) /3);
     border-radius: 12px;
+    padding: 3.125rem 2.1875rem 2rem;
 }
 
 .benefits h2 {
     padding: 70px 0;
+    color: #fff;
 }
+
+.benefits span,
+.benefits h4 {
+    color: var(--purple);
+}
+
+.benefits span {
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.benefits h4 {
+    margin: 1.875rem 0;
+}
+
+.benefits p {
+    font-size: 1.25rem;
+    color: #737373;
+    margin-bottom: 1.875rem
+}
+
 
 /*quinta sezione*/
 
